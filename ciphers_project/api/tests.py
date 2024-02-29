@@ -18,9 +18,16 @@ class CiphersTest(TestCase):
         output = caesar_encode(plain_text, shift)
         self.assertEqual(expected, output)
 
-    def test_caesar_encoding_2(self):
+    def test_caesar_encoding_3(self):
         plain_text = 'xyz'
         shift = 3
         expected = 'abc'
+        output = caesar_encode(plain_text, shift)
+        self.assertEqual(expected, output)
+
+    def test_caesar_encoding_4(self):
+        plain_text = 'Hello World'
+        shift = 5
+        expected = 'Mjqqt Btwqi'
         output = caesar_encode(plain_text, shift)
         self.assertEqual(expected, output)
