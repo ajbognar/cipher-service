@@ -30,4 +30,4 @@ class CiphersTest(TestCase):
         shift = 5
         expected = 'Mjqqt Btwqi'
         output = caesar_encode(plain_text, shift)
-        self.assertEqual(expected, output)
+        self.assertEqual(expected, output) 
